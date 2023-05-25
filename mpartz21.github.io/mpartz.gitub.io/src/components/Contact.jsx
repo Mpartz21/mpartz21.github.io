@@ -26,7 +26,33 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   }
 
-  const handleSubmit = (e) => {}
+  const handleSubmit = (submitEvent) => {
+    submitEvent.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      'service_uajv1te',
+      'template_r8n7ioj',
+       {
+        from_name: form.name,
+        to_name: 'Miguel',
+        from_email: form.email,
+        to_email: `mig21.ap@gmail.com`,
+        message: form.message,
+        
+      },'-A9Zr2pe1NhAf1AiZ')
+      .then((response) => {
+        setLoading(false);
+        alert('Message sent successfully! I will get back to you as soon as I can.');
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      }, (err) => {
+        setLoading(false);
+        console.log(err);
+        alert('Message failed to send. Please try my LinkedIn '); 
+     })
 
 
   return (
