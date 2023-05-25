@@ -1,4 +1,4 @@
-name: Miguel's Profile
+name: Deploy to GitHub Pages
 
 on:
   push:

@@ -5,7 +5,7 @@ import {styles} from '../styles'
 import { github } from '../assets'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { projects, works } from '../constants'
-import { fadeIn, textVariant} from '../utils/motion'
+import { fadeIn, textVariant} from '../Utils/motion'
 
 
 const ProjectCard = ({index, name, description, tags, image, source_code_Link}) => {
