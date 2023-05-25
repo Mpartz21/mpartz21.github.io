@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import SectionWrapper from '../hoc/SectionWrapper'
-import { slideIn } from '../utils/motion'
+import { slideIn } from '../Utils/motion'
 
 
 
