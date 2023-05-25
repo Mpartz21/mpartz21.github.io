@@ -24,7 +24,7 @@ jobs:
   # Single deploy job since we're just deploying
   deploy:
     environment:
-      name: github-pages
+      name: main
       url: 'https://mpartz21.github.io'
     runs-on: ubuntu-latest
     steps:
