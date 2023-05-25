@@ -40,7 +40,7 @@ const Contact = () => {
         message: form.message,
         
       },'-A9Zr2pe1NhAf1AiZ')
-      .then((response) => {
+      .then(() => {
         setLoading(false);
         alert('Message sent successfully! I will get back to you as soon as I can.');
         setForm({
@@ -52,9 +52,9 @@ const Contact = () => {
         setLoading(false);
         console.log(err);
         alert('Message failed to send. Please try my LinkedIn '); 
-     })
+     })};
 
-
+    
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div variants={slideIn('left',"tween", 0.2, 1)}
